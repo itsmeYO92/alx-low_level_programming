@@ -8,10 +8,11 @@
  * Return: 0 if seccussful
  */
 
-int main(void) /* The main function is the strating point of the program */
+int main(void)
 {
-	string = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	fprintf(stderr, "%s", string);
+	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	
+	fprintf(stderr, "%s", string_to_print);
 
 	return (1);
 }
