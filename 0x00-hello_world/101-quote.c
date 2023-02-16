@@ -5,7 +5,7 @@
  *
  * Description: entry point of the program
  *
- * Return: 0 if seccussful
+ * Return: return 1 if successful
  */
 
 int main(void)
