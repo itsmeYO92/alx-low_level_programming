@@ -1,5 +1,5 @@
-#include <time.h>
 #include <stdio.h>
+#include "main.h"
 /**
  * main - Entry point
  *
@@ -9,7 +9,12 @@
 */
 int main(void)
 {
-	printf("_putchar\n");
+	int i;
+	char str="_putchar\n";
+
+	for (i = 0; i < 9; i++){
+		_putchar(str[i]);
+	}
 	return (0);
 }
 
