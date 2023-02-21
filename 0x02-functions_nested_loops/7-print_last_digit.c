@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  * print_last_digit - Entry point
