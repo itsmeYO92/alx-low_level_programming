@@ -6,8 +6,8 @@
  *
  * Description: print every minute of the day
  *
- * Return: 0 if seccessful
-*/
+ * Return: void
+ */
 void jack_bauer(void)
 {
 	int i;
@@ -25,7 +25,6 @@ void jack_bauer(void)
 			_putchar('\n');
 		}
 	}
-	return (0);
 
 }
 
