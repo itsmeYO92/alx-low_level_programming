@@ -2,11 +2,11 @@
 #include "main.h"
 /**
  * _islower - Entry point
- * 
+ *
  * @c : char to check
  * Description: check if char c is lowercase
  *
- * Return: 1 if lower 0 if not 
+ * Return: 1 if lower 0 if not
 */
 int _islower(int c)
 {
