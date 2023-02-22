@@ -1,60 +1,43 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
-/**
- * times_table  - Entry point
- *
- * Description: print every minute of the day
- *
- * Return: void
- */
-void times_table(int n)
-{
-	int i;
-	int j;
-	int r;
+#include"main.h"
 
-	for (i = 0; i < n + 1; i++)
+/**
+ * print_times_table - prints time table of n
+ *
+ * @n: takes number input
+ *
+ * return: nothing
+*/
+
+void print_times_table(int n)
+{
+	int res, j, i;
+
+	if (n <= 15 && n >= 0)
 	{
-		_putchar('0');
-		_putchar(',');
-		r = i;
-		for (j = 1; j < n + 1; j++)
+		for (i = 0; i <= n; ++i)
 		{
-			_putchar(' ');
-			if (r / 100 == 0)
-			{
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar(r / 100 + '0');
-			}
-			if (r / 10 == 0)
-			{
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar(r / 10 + '0');
-			}
-			_putchar(r % 10 + '0');
-			{
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar(r / 10 + '0');
-			}
-			_putchar(r % 10 + '0');
-			if (j != 9)
+			_putchar(48);
+			for (j = 1; j <= n; ++j)
 			{
 				_putchar(',');
+				_putchar(' ');
+
+				res = i * j;
+
+				if (res <= 9)
+					_putchar(' ');
+				if (res <= 99)
+					_putchar(' ');
+
+				if (res >= 100)
+				{
+					_putchar((res / 100) + 48);
+					_putchar((res / 10) % 10 + 48);
+				} else if (res <= 99 && res >= 10)
+					_putchar((res / 10) + 48);
+				_putchar((res % 10) + 48);
 			}
-			r = r + i;
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
-
 }
-

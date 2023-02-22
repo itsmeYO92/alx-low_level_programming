@@ -1,4 +1,5 @@
 void print_alphabet(void);
+void print_times_table(int n);
 void print_to_98(int a);
 int add(int a, int b);
 int _putchar(char c);
