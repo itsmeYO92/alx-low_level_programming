@@ -3,7 +3,7 @@
 /**
  * largest_number - returns the largest number
  *
- * @a: first number 
+ * @a: first number
  * @b: second number
  * @c: third number
  *
