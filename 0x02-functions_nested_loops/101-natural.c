@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h> 
 /**
  * main - Entry point
  *
@@ -15,8 +15,7 @@ int main(void)
 		if (i % 3 == 0 || i % 5 == 0)
 			res += i;
 	}
-	_putchar(res + '0');
-	_putchar('\n');
+	printf("%d\n", res);
 	return (0);
 }
 
