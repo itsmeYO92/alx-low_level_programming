@@ -13,5 +13,6 @@ void more_numbers(void);
 void print_most_numbers(void);
 int _putchar(char c);
 void print_triangle(int size);
+void print_number(int n);
 
 #endif
