@@ -3,7 +3,7 @@
 /**
  * print_line - Entry point
  * Description: print a line
- *
+ * @n: lenght of line
  * Return: void
  */
 void print_line(int n)
