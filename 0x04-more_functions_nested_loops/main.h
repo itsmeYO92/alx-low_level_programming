@@ -5,6 +5,7 @@
 int _isupper(char c);
 int _isdigit(int c);
 void print_line(int n);
+void print_diagonal(int n);
 int mul(int a, int b);
 void print_numbers(void);
 void more_numbers(void);
