@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * _strlen - swap the value of 2 int
+ * _strlen - return the lent of a string
  *
  * @s: string to count
  *
- * return: string lenght
+ * Return: string lenght
  */
 
 int _strlen(char *s)
@@ -20,6 +20,5 @@ int _strlen(char *s)
 	}
 
 	return (count);
-	
-	
+
 }
