@@ -12,7 +12,8 @@
 
 int _atoi(char *s)
 {
-	int i = 0, res = 0, stat = 0, first, last, len = strlen(s), j = 1;
+	int i = 0, stat = 0, first, last, len = strlen(s), j = 1;
+	unsigned int res = 0;
 
 	for (i = 0; i <= len; i++)
 	{
