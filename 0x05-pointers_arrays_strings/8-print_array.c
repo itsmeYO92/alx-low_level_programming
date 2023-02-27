@@ -25,6 +25,7 @@ void print_array(int *a, int n)
 		{
 			putchar(*(a + i));
 		}
+	}
 	putchar('\n');
 
 }
