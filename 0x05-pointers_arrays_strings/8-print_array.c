@@ -23,7 +23,7 @@ void print_array(int *a, int n)
 		}
 		else
 		{
-			putchar(*(a + i));
+			putchar(*(a + i) + '0');
 		}
 	}
 	putchar('\n');
