@@ -12,33 +12,16 @@
 
 int _atoi(char *s)
 {
-	int i = 0, stat = 0, first, last, len = strlen(s), j = 1;
+	int i = 1;
+	unsigned int res = 0;
 
-	double int res = 0;
-
-	for (i = 0; i <= len; i++)
-	{
-		if ('0' <= *(s + i) && *(s + i) <= '9' && stat == 0)
-		{
-			first = i;
-			stat = 1;
-		}
-		if (((*s + i) == '\0' || *(s + i) > '9' || *(s + i) < '0') && stat == 1)
-		{
-			last = i - 1;
+	do {
+		if (*s == '-')
+			i *= -1;
+		else if (*s >= '0' && *s <= '9')
+			res = res * 10 + (*s - '0');
+		else if (res > 0)
 			break;
-		}
-	}
-
-	for (i = last; i >= first; i--)
-	{
-		res = res + ((*(s + i) - '0') * j);
-		j = j * 10;
-	}
-
-	if (first > 0)
-		if (*(s + first - 1) == '-')
-			return (-1 * res);
-	return (res);
-
+	} while (*s++);
+	return (res * i);
 }
