@@ -24,6 +24,8 @@ char *cap_string(char *s)
 				stat = 0;
 			}
 		}
+		else if (('0' <= *(s + i) && *(s + i) <= '9') || *(s + i) == '-')
+			stat = 0;
 		else if (*(s + i) <= 'A' || *(s + i) >= 'Z')
 			stat = 1;
 		else
