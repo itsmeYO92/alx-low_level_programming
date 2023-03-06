@@ -31,23 +31,7 @@
 - [0x05](./0x05-pointers_arrays_strings) : Pointers, arrays and strings.
 - [0x06](./0x06-pointers_arrays_strings) : More pointers, arrays and strings.
 - [0x07](./0x07-pointers_arrays_strings) : Even more pointers, arrays and strings.
-- [0x08](./0x08-recursion) : Recursion.
-- [0x09](./0x09-static_libraries) : Static libraries.
-- [0x0A](./0x0A-argc_argv) : argc, argv[].
-- [0x0B](./0x0B-malloc_free) : Malloc, free.
-- [0x0C](./0x0C-more_malloc_free) : More malloc, free.
-- [0x0D](./0x0D-preprocessor) : Preprocessor.
-- [0x0E](./0x0E-structures_typedef) : Structures, typedef.
-- [0x0F](./0x0F-function_pointers) : Function pointers.
-- [0x10](./0x10-variadic_functions) : Variadic functions.
-- [0x11](https://github.com/iAmG-r00t/printf) : Write our own printf project.
-- [0x12](./0x12-singly_linked_lists) : Singly linked lists.
-- [0x13](./0x13-more_singly_linked_lists) : More singly linked lists.
-- [0x14](./0x14-bit_manipulation) : Bit manipulation.
-- [0x15](./0x15-file_io) : File I/O.
-- [0x1C](./0x1C-makefiles) : Makefiles.
-- [0x1D](https://github.com/iAmG-r00t/binary_trees) : Binary trees.
-- [0x1E](./0x1E-search_algorithms) : Search Algorithms.
+
 
 ---
 
