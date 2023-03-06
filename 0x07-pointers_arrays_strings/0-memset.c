@@ -7,7 +7,7 @@
  *
  * @b: constant to be filled with
  *
- * @n number of bytes to be filled
+ * @n: number of bytes to be filled
  *
  * Return: pointer to the memory area
  */
