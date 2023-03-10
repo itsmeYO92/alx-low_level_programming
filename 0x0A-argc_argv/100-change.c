@@ -43,7 +43,7 @@ int rec(int a)
 */
 int main(int argc, char **argv)
 {
-	int n = atoi(argv[1]);
+	int n;
 
 	if (argc != 2)
 	{
@@ -52,6 +52,7 @@ int main(int argc, char **argv)
 	}
 	else
 	{
+		n = atoi(argv[1]);
 		printf("%d\n", rec(n));
 	}
 
