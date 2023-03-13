@@ -23,7 +23,7 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i < strlen(s1); i++)
 		*(p + i) = *(s1 + i);
-	for (i = strlen(s1); i <= strlen(s1) + strlen(s2); i++)
+	for (i = strlen(s1); i <= (strlen(s1) + strlen(s2)); i++)
 		*(p + i) = *(s2 + i);
 
 	return (p);
