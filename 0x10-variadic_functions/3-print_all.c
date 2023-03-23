@@ -74,7 +74,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(pars, format);
-	while (format[j] != '\0')
+	while (format && format[j] != '\0')
 	{
 		i = 0;
 		while (ops[i].op)
