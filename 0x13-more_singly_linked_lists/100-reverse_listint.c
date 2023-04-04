@@ -5,7 +5,7 @@
  * @head: pointer to the head of the single linked list
  * Return: reversed list
 */
-listint_t *reverse_listint(listint_t **head);
+listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *i = NULL, *j = NULL;
 
@@ -14,8 +14,8 @@ listint_t *reverse_listint(listint_t **head);
 		i = (*head)->next;
 		(*head)->next = j;
 		j = *head;
-		*head = n;
+		*head = i;
 	}
-	*head = p;
+	*head = j;
 	return (*head);
 }
