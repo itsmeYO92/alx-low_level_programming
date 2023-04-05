@@ -10,7 +10,6 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- * 
  */
 
 typedef struct listint_s
@@ -33,5 +32,4 @@ listint_t *add_nodeint(listint_t **head, const int n);
 listint_t *reverse_listint(listint_t **head);
 int sum_listint(listint_t *head);
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
-
 #endif
