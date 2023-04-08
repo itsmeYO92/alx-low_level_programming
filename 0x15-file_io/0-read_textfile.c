@@ -9,16 +9,22 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *file = fopen(filename, "r");
-	char c;
-	size_t count = 0;
 
-	if (!file)
+	int file;
+	char *str;
+	ssize_t nread, nwrite;
+
+	if (!filename)
+		return (0);
+	file = open(filename, O_RDONLY);
+	str = malloc(sizeof(char) * letters);
+	if (file == -1 || !str)
 		return (0);
 
-	while (fread(&c, sizeof(char), sizeof(char), file) != 0)
-		if (count < letters)
-			count += write(1, &c, 1);
+	nread = read(file, str, letters);
+	nwrite = write(1, str, nread);
 
-	return (count);
+	free(str);
+	close(file);
+	return (nwrite);
 }
