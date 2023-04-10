@@ -43,10 +43,10 @@ int main(int ac, char **av)
 	}
 	fdf = close(from_file);
 	fdt = close(to_file);
-	if (fdt + fdf != 0)
+/*	if (fdt + fdf != 0)
 	{
 		dprintf(2, "Error: Can't close fd %d\n", fdt == -1 ? fdt : fdf);
 		exit(100);
-	}
+	}*/
 	return (0);
 }
