@@ -35,7 +35,7 @@ int main(int ac, char **av)
 	while (nread != 0 && nread != -1)
 	{
 		nread = read(from_file, buffer, 1024);
-		if (nread == -1 || write(to_file, buffer, nread) == -1)
+		if (write(to_file, buffer, nread) == -1)
 		{
 		dprintf(2, "Error: Can't write to %s\n", av[2]);
 		exit(99);
