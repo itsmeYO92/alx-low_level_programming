@@ -45,10 +45,10 @@ int main(int ac, char **av)
 	while (nread > 0)
 	{
 		nread = read(from_file, buffer, 1024);
-		if (write(to_file, buffer, nread) == -1)
-			print_err(99, av[2], 0);
 		if (nread == -1)
 			print_err(98, av[1], 0);
+		if (write(to_file, buffer, nread) == -1)
+			print_err(99, av[2], 0);
 	}
 	fdf = close(from_file);
 	fdt = close(to_file);
