@@ -5,26 +5,29 @@
  *
  * @head: A double pointer to the head of the doubly linked list.
  */
-dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *current;
 	unsigned int i;
 
-	if (!head)
+	if (!head || !(*head))
 		return (-1);
 	if (index == 0)
 	{
-		head = head->next;
+		*head = (*head)->next;
 		return (1);
 	}
 
-	current = head->next;
-	for (i = 1; i < index; i++)
+	current = *head;
+	for (i = 0; i < index; i++)
 	{
-		current = current->next;
-		if (!current)
+		if (current->next)
+			current = current->next;
+		else
 			return (-1);
 	}
 	current->prev->next = current->next;
-	current->next->prev = current->prev;
+	if (current->next)
+		current->next->prev = current->prev;
+	return (1);
 }
