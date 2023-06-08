@@ -26,9 +26,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 		current = current->next;
 	}
-	if (!(add_node(&(ht->array[index]), value, key)))
-		return (0);
-	return (1);
+	return (add_node(&(ht->array[index]), value, key));
 }
 
 
@@ -39,17 +37,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
  * @key: key
  * Return: adress of new element
 */
-hash_node_t *add_node(hash_node_t **head, const char *str, const char *key)
+int add_node(hash_node_t **head, const char *str, const char *key)
 {
 	hash_node_t *new;
 
 	new = malloc(sizeof(hash_node_t));
 	if (!new)
-		return (NULL);
+		return (0);
 	new->value = strdup(str);
 	new->key = strdup(key);
 	new->next = *head;
 	*head = new;
 
-	return (*head);
+	return (1);
 }
