@@ -16,4 +16,4 @@ fclean :
 	clean oclean
 
 re :
-	oclean all
+	fclean all
