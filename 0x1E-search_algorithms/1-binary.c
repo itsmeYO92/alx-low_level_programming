@@ -31,6 +31,14 @@ int binary_search(int *array, size_t size, int value)
 	return (-1);
 }
 
+
+
+/**
+ * print_array - a function to print the array to search
+ * @array: array to print
+ * @size: size of the array
+*/
+
 void print_array(int *array, size_t size)
 {
 	size_t i;
